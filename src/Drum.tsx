@@ -23,7 +23,8 @@ const Drum = ({audioClip}: DrumProps) => {
         className="drum-pad"
         id={ `drum-${audioClip.keyTrigger} `}
         onClick={() => playSound(audioClip)}>
-            <audio src={audioClip.url} id={audioClip.keyTrigger} className="clip">{audioClip.keyTrigger}</audio>
+            <audio src={audioClip.url} id={audioClip.keyTrigger} className="clip"></audio>
+            {audioClip.keyTrigger}
         </button>
     )
 }
